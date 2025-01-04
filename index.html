@@ -3,10 +3,694 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/icon-logo.png"
+      type="image/x-icon"
+    />
+    <title>Goout</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello World!</h1>
+    <!-- Navbar -->
+    <header class="max-w-7xl mx-auto py-7">
+      <nav class="flex flex-row justify-between items-center">
+        <svg
+          width="108"
+          height="36"
+          viewBox="0 0 108 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 14.5V13.0413C22 12.3887 21.6816 11.7771 21.1469 11.4028L13.1469 5.80285C12.4583 5.3208 11.5417 5.3208 10.8531 5.80285L2.85308 11.4028C2.31842 11.7771 2 12.3887 2 13.0413V27.3146C2 28.9015 3.75947 29.8563 5.08998 28.9915L10.91 25.2085C11.5728 24.7777 12.4272 24.7777 13.09 25.2085L18.9606 29.0244C20.2694 29.8751 22 28.9359 22 27.375V27.375"
+            stroke="#466BF3"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <circle cx="22" cy="21" r="3" fill="#466BF3" />
+          <path
+            d="M46.32 14.288C45.936 13.584 45.408 13.048 44.736 12.68C44.064 12.312 43.28 12.128 42.384 12.128C41.392 12.128 40.512 12.352 39.744 12.8C38.976 13.248 38.376 13.888 37.944 14.72C37.512 15.552 37.296 16.512 37.296 17.6C37.296 18.72 37.512 19.696 37.944 20.528C38.392 21.36 39.008 22 39.792 22.448C40.576 22.896 41.488 23.12 42.528 23.12C43.808 23.12 44.856 22.784 45.672 22.112C46.488 21.424 47.024 20.472 47.28 19.256H41.52V16.688H50.592V19.616C50.368 20.784 49.888 21.864 49.152 22.856C48.416 23.848 47.464 24.648 46.296 25.256C45.144 25.848 43.848 26.144 42.408 26.144C40.792 26.144 39.328 25.784 38.016 25.064C36.72 24.328 35.696 23.312 34.944 22.016C34.208 20.72 33.84 19.248 33.84 17.6C33.84 15.952 34.208 14.48 34.944 13.184C35.696 11.872 36.72 10.856 38.016 10.136C39.328 9.4 40.784 9.032 42.384 9.032C44.272 9.032 45.912 9.496 47.304 10.424C48.696 11.336 49.656 12.624 50.184 14.288H46.32ZM58.9819 26.216C57.7019 26.216 56.5499 25.936 55.5259 25.376C54.5019 24.8 53.6939 23.992 53.1019 22.952C52.5259 21.912 52.2379 20.712 52.2379 19.352C52.2379 17.992 52.5339 16.792 53.1259 15.752C53.7339 14.712 54.5579 13.912 55.5979 13.352C56.6379 12.776 57.7979 12.488 59.0779 12.488C60.3579 12.488 61.5179 12.776 62.5579 13.352C63.5979 13.912 64.4139 14.712 65.0059 15.752C65.6139 16.792 65.9179 17.992 65.9179 19.352C65.9179 20.712 65.6059 21.912 64.9819 22.952C64.3739 23.992 63.5419 24.8 62.4859 25.376C61.4459 25.936 60.2779 26.216 58.9819 26.216ZM58.9819 23.288C59.5899 23.288 60.1579 23.144 60.6859 22.856C61.2299 22.552 61.6619 22.104 61.9819 21.512C62.3019 20.92 62.4619 20.2 62.4619 19.352C62.4619 18.088 62.1259 17.12 61.4539 16.448C60.7979 15.76 59.9899 15.416 59.0299 15.416C58.0699 15.416 57.2619 15.76 56.6059 16.448C55.9659 17.12 55.6459 18.088 55.6459 19.352C55.6459 20.616 55.9579 21.592 56.5819 22.28C57.2219 22.952 58.0219 23.288 58.9819 23.288ZM74.2866 26.216C73.0066 26.216 71.8546 25.936 70.8306 25.376C69.8066 24.8 68.9986 23.992 68.4066 22.952C67.8306 21.912 67.5426 20.712 67.5426 19.352C67.5426 17.992 67.8386 16.792 68.4306 15.752C69.0386 14.712 69.8626 13.912 70.9026 13.352C71.9426 12.776 73.1026 12.488 74.3826 12.488C75.6626 12.488 76.8226 12.776 77.8626 13.352C78.9026 13.912 79.7186 14.712 80.3106 15.752C80.9186 16.792 81.2226 17.992 81.2226 19.352C81.2226 20.712 80.9106 21.912 80.2866 22.952C79.6786 23.992 78.8466 24.8 77.7906 25.376C76.7506 25.936 75.5826 26.216 74.2866 26.216ZM74.2866 23.288C74.8946 23.288 75.4626 23.144 75.9906 22.856C76.5346 22.552 76.9666 22.104 77.2866 21.512C77.6066 20.92 77.7666 20.2 77.7666 19.352C77.7666 18.088 77.4306 17.12 76.7586 16.448C76.1026 15.76 75.2946 15.416 74.3346 15.416C73.3746 15.416 72.5666 15.76 71.9106 16.448C71.2706 17.12 70.9506 18.088 70.9506 19.352C70.9506 20.616 71.2626 21.592 71.8866 22.28C72.5266 22.952 73.3266 23.288 74.2866 23.288ZM96.2393 12.704V26H92.8553V24.32C92.4233 24.896 91.8553 25.352 91.1513 25.688C90.4633 26.008 89.7113 26.168 88.8953 26.168C87.8553 26.168 86.9353 25.952 86.1353 25.52C85.3353 25.072 84.7033 24.424 84.2393 23.576C83.7913 22.712 83.5673 21.688 83.5673 20.504V12.704H86.9273V20.024C86.9273 21.08 87.1913 21.896 87.7193 22.472C88.2473 23.032 88.9673 23.312 89.8793 23.312C90.8073 23.312 91.5353 23.032 92.0633 22.472C92.5913 21.896 92.8553 21.08 92.8553 20.024V12.704H96.2393ZM103.466 15.464V21.896C103.466 22.344 103.57 22.672 103.778 22.88C104.002 23.072 104.37 23.168 104.882 23.168H106.442V26H104.33C101.498 26 100.082 24.624 100.082 21.872V15.464H98.4984V12.704H100.082V9.416H103.466V12.704H106.442V15.464H103.466Z"
+            fill="#466BF3"
+          />
+        </svg>
+
+        <ul class="flex flex-row gap-x-7">
+          <li>
+            <a
+              href="#"
+              class="text-base text-zinc-500 hover:text-indigo-600 hover:font-medium"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-zinc-500 hover:text-indigo-600 hover:font-medium"
+              >Flight</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-zinc-500 hover:text-indigo-600 hover:font-medium"
+              >Hotel</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-zinc-500 hover:text-indigo-600 hover:font-medium"
+              >Total Package</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-zinc-500 hover:text-indigo-600 hover:font-medium"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="py-3 px-6 bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white duration-300 text-base font-medium rounded-xl"
+          >My Account</a
+        >
+      </nav>
+    </header>
+
+    <!-- Services -->
+    <section
+      id="services"
+      class="max-w-7xl mx-auto bg-zinc-50 rounded-3xl mb-40"
+    >
+      <div class="flex items-center py-10 px-14">
+        <div class="w-1/3">
+          <p class="text-indigo-600 font-semibold mb-1">Our Sercice</p>
+          <h2 class="text-4xl font-semibold">
+            We Offer<br />
+            Best Service
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 gap-14">
+          <div class="flex gap-x-5 max-w-96">
+            <span
+              class="min-w-16 h-16 inline-flex items-center justify-center bg-white rounded-xl"
+            >
+              <img src="./src/images/icon-cloud.png" alt="" />
+            </span>
+            <div>
+              <h3 class="text-xl font-semibold text-indigo-950 mb-1">
+                Calculated Weather
+              </h3>
+              <p class="text-base font text-zinc-500">
+                A new way to travel by air the easy and fast way.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-x-5 max-w-96">
+            <span
+              class="min-w-16 h-16 inline-flex items-center justify-center bg-white rounded-xl"
+            >
+              <img src="./src/images/icon-plane.png" alt="" />
+            </span>
+            <div>
+              <h3 class="text-xl font-semibold text-indigo-950 mb-1">
+                Best Experience Flight
+              </h3>
+              <p class="text-base font text-zinc-500">
+                A new way to travel by air the easy and fast way.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-x-5 max-w-96">
+            <span
+              class="min-w-16 h-16 inline-flex items-center justify-center bg-white rounded-xl"
+            >
+              <img src="./src/images/icon-building.png" alt="" />
+            </span>
+            <div>
+              <h3 class="text-xl font-semibold text-indigo-950 mb-1">
+                Best Place to Stay
+              </h3>
+              <p class="text-base font text-zinc-500">
+                A new way to travel by air the easy and fast way.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-x-5 max-w-96">
+            <span
+              class="min-w-16 h-16 inline-flex items-center justify-center bg-white rounded-xl"
+            >
+              <img src="./src/images/icon-touch.png" alt="" />
+            </span>
+            <div>
+              <h3 class="text-xl font-semibold text-indigo-950 mb-1">
+                Easy-To-Use
+              </h3>
+              <p class="text-base font text-zinc-500">
+                A new way to travel by air the easy and fast way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section id="explore" class="max-w-7xl mx-auto mb-40">
+      <div class="flex flex-col items-center text-center mb-14">
+        <h2 class="text-4xl font-semibold mb-3">
+          Explore Natural Destinations
+        </h2>
+        <p class="text-zinc-500">
+          A new way to travel by air the easy and fast way.<br />
+          Try it now by filling out the form below!
+        </p>
+      </div>
+      <div class="grid grid-cols-4 gap-8 mb-14">
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-1.png"
+            class="aspect-square object-cover object-bottom group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Waterfall Haven</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Sejalan, Iceland
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$9</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-2.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Greatest Mountain</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Wildsee, Italy
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$12</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-3.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Coconut Tree River</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Lombok, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$6</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-4.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Circle Beach Play</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Lombok, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$5</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-5.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">High Ground</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Bali, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$49</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-6.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Dinosaur Land</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Bali, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$5</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-7.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">Turtle Island</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Bali, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$5</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="group rounded-3xl shadow-2xl overflow-hidden cursor-pointer relative">
+          <img
+            src="./src/images/travel-8.png"
+            class="aspect-square object-cover group-hover:scale-105 group-hover:rounded-none duration-300 rounded-3xl"
+            alt=""
+          />
+          <span
+            class="absolute top-4 right-4 py-1 px-3 rounded-full backdrop-blur bg-white/5"
+          >
+            <p class="flex items-center gap-x-1 text-white">
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+              5.0
+            </p>
+          </span>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold group-hover:text-indigo-600 mb-1">The Cliffside Beach</h4>
+            <p class="text-zinc-500 flex items-center gap-x-1">
+              <svg
+                width="11"
+                height="16"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.33329 14.6666C7.24395 14.6666 9.99996 9.24397 9.99996 5.99998C9.99996 3.42265 7.91062 1.33331 5.33329 1.33331C2.75596 1.33331 0.666626 3.42265 0.666626 5.99998C0.666626 9.24397 3.42263 14.6666 5.33329 14.6666ZM5.33329 4.33335C6.25377 4.33335 6.99996 5.07955 6.99996 6.00002C6.99996 6.9205 6.25377 7.66669 5.33329 7.66669C4.41282 7.66669 3.66663 6.9205 3.66663 6.00002C3.66663 5.07955 4.41282 4.33335 5.33329 4.33335Z"
+                  fill="#7B7B7B"
+                />
+              </svg>
+              Bali, Indonesia
+            </p>
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-zinc-500">
+                <span class="text-indigo-950 font-semibold text-xl">$5</span>
+                /person
+              </p>
+              <a href="#" class="px-6 py-2 bg-indigo-600 text-white hover:bg-indigo-700 duration-300 rounded-xl"
+                >Book</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <a href="#" class="py-3 px-6 border border-zinc-500 text-zinc-500 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white duration-300 rounded-full">View More</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#232631]">
+      <div class="max-w-7xl mx-auto h-96 relative">
+        <div class="w-2/3 grid grid-cols-4 pt-24">
+          <div>
+            <img src="./src/images/footer-logo.png" class="mb-3" alt="" />
+            <p class="text-white">Copyright © 2022. All Rights Reserved.</p>
+          </div>
+          <div>
+            <p class="text-white font-medium mb-4">Page Menus</p>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white"
+                  >My Account</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-white font-medium mb-4">Our Product</p>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white"
+                  >Booking Flight</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white"
+                  >Booking Hotels</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white"
+                  >Trip Packages</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-white font-medium mb-4">Social Media</p>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">Tiktok</a>
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="text-zinc-400 hover:text-white">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img
+          src="./src/images/footer-logo-dark.png"
+          class="absolute bottom-0 right-0"
+          alt=""
+        />
+      </div>
+    </footer>
   </body>
 </html>
